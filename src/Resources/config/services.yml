@@ -21,3 +21,8 @@ services:
             - '@security.token_storage'
         tags:
             - { name: oro_message_queue.consumption.extension }
+
+    ehdev.initRoleAcl:
+        class: EHDev\BasicsBundle\Command\InitRoleAclCommand
+        tags:
+            - { name: console.command }
